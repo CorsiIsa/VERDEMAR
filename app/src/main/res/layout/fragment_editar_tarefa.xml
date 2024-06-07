@@ -1,0 +1,107 @@
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/labels"
+    android:orientation="vertical"
+    tools:context=".EditarTarefaFragment">
+
+    <FrameLayout
+        android:id="@+id/editarTarefas"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical">
+
+
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:textColor="@color/textos"
+                android:textSize="16dp"
+                android:text="Nome da tarefa: "
+                android:layout_marginLeft="10dp"
+                android:layout_marginTop="20dp" />
+
+            <EditText
+                android:id="@+id/NomeTarefaEditada"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="20dp"
+                android:textColor="@color/textos"
+                android:inputType="text"/>
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:textColor="@color/textos"
+                android:textSize="16dp"
+                android:text="Descrição tarefa: "
+                android:layout_marginLeft="10dp"
+                android:layout_marginTop="10dp"/>
+            <EditText
+                android:id="@+id/DescTarefaEditada"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="20dp"
+                android:textColor="@color/textos"
+                android:inputType="text"/>
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:textColor="@color/textos"
+                android:textSize="16dp"
+                android:text="Data da Tarefa: "
+                android:layout_marginLeft="10dp"
+                android:layout_marginTop="10dp"/>
+            <EditText
+                android:id="@+id/DataTarefaEditada"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="20dp"
+                android:textColor="@color/textos"
+                android:textColorHint="@color/textos"
+                android:hint="xx/xx/xxxx"
+                android:inputType="text"/>
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:textColor="@color/textos"
+                android:textSize="16dp"
+                android:text="*A foto não pode ser modificada *"
+                android:layout_marginLeft="10dp"
+                android:layout_marginTop="10dp"/>
+
+
+            <Button
+                android:id="@+id/btnSalvaTarefa"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="salvar"
+                android:background="@color/cor_fundo"
+                android:textColor="@color/labels"
+                android:textSize="24dp"
+                android:layout_marginLeft="10dp"
+                android:layout_marginRight="10dp"
+                android:layout_marginTop="50dp"
+                android:layout_marginBottom="10dp"/>
+
+        </LinearLayout>
+    </ScrollView>
+</androidx.constraintlayout.widget.ConstraintLayout>

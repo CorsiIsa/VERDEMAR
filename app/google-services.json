@@ -1,0 +1,29 @@
+{
+  "project_info": {
+    "project_number": "1042439034882",
+    "project_id": "admtrefas",
+    "storage_bucket": "admtrefas.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:1042439034882:android:daebc5e3dfc7331164ef1b",
+        "android_client_info": {
+          "package_name": "com.example.verdemar"
+        }
+      },
+      "oauth_client": [],
+      "api_key": [
+        {
+          "current_key": "AIzaSyAnRMAtflxoQYjHZUuyG5_X7ixOOrJg9yM"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": []
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}

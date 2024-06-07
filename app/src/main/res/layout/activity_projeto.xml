@@ -1,0 +1,260 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/labels">
+
+    <LinearLayout
+        android:id="@+id/header"
+        android:layout_width="match_parent"
+        android:layout_height="50dp"
+        android:orientation="horizontal"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent">
+
+
+        <ImageView
+            android:id="@+id/imageView5"
+            android:layout_width="500dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            app:srcCompat="@drawable/logo" />
+
+        <ImageView
+            android:id="@+id/imageView6"
+            android:layout_width="200dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            app:srcCompat="@drawable/usuario" />
+    </LinearLayout>
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_marginTop="50dp"
+        android:layout_marginBottom="20dp"
+        app:layout_constraintTop_toTopOf="parent">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:background="@color/cor_fundo"
+            android:orientation="vertical"
+            android:layout_marginLeft="20dp"
+            android:layout_marginRight="20dp"
+            android:layout_marginTop="40dp">
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="100dp"
+                android:layout_marginTop="10dp"
+                android:layout_marginRight="20dp"
+                android:text="PROJETO"
+                android:textAlignment="center"
+                android:textColor="@color/labels"
+                android:textSize="36dp" />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="20dp"
+                android:layout_marginTop="10dp"
+                android:layout_marginRight="20dp"
+                android:text="QUEM SOMOS?"
+                android:textAlignment="center"
+                android:textColor="@color/labels"
+                android:textSize="24dp" />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="10dp"
+                android:layout_marginTop="10dp"
+                android:layout_marginRight="10dp"
+                android:text="Somos um grupo de programadores com o objetivo de desenvolver um aplicativo móvel que permite aos cidadões reportar e ajudar na remoção e limpeza de lixos e residuos encontrados nas prais brasileiras além de monitorar a poluição em áreas específicas."
+                android:textColor="@color/labels"
+                android:textSize="16dp" />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="10dp"
+                android:layout_marginRight="10dp"
+                android:text="Nossa missão é envolver a comunidade na conservação do meio ambiente marinho, fornecendo ferramentas para registrar a poluição, organizar eventos de limpeza e monitorar a saúde das áreas costeiras e fomentar a educação ambiental."
+                android:textColor="@color/labels"
+                android:textSize="16dp"/>
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="20dp"
+                android:layout_marginTop="30dp"
+                android:layout_marginRight="20dp"
+                android:text="POLUIÇÃO MARINHA"
+                android:textAlignment="center"
+                android:textColor="@color/labels"
+                android:textSize="24dp" />
+
+            <ImageView
+                android:id="@+id/imageView7"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                app:srcCompat="@drawable/poluicaomarinha"
+                android:layout_marginTop="30dp"/>
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="10dp"
+                android:layout_marginRight="10dp"
+                android:layout_marginTop="30dp"
+                android:text="Principais Causas:"
+                android:textColor="@color/labels"
+                android:textSize="16dp"/>
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="10dp"
+                android:layout_marginRight="10dp"
+                android:layout_marginTop="30dp"
+                android:text="* Acidentes em oleoprodutos ou plataformas de petróleo, geram vazamento para as águas marinhas;"
+                android:textColor="@color/labels"
+                android:textSize="16dp"/>
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="10dp"
+                android:layout_marginRight="10dp"
+                android:layout_marginTop="30dp"
+                android:text="* Petróleo, combustíveis e outros produtos químicos são descartado propositalmente por pessoas resposáveis por embarcações ou vazamentos em navios;"
+                android:textColor="@color/labels"
+                android:textSize="16dp"/>
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="10dp"
+                android:layout_marginRight="10dp"
+                android:layout_marginTop="30dp"
+                android:text="* Lixos materiais (plásticos, ferro, vidro, papel, entre outro) são jogados por pessoas que estão em navios ou em praias;"
+                android:textColor="@color/labels"
+                android:textSize="16dp"/>
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="10dp"
+                android:layout_marginRight="10dp"
+                android:layout_marginTop="30dp"
+                android:text="* Esgoto doméstico e industrial sem tratamento. Grande parte de esgoto que chega nos mares e oceanos tem como origem os rios que receberam estes poluentes durante o seu trajeto;"
+                android:textColor="@color/labels"
+                android:textSize="16dp"/>
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="10dp"
+                android:layout_marginRight="10dp"
+                android:layout_marginTop="30dp"
+                android:text="* Descarga de lama de drenagem;"
+                android:textColor="@color/labels"
+                android:textSize="16dp"/>
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="10dp"
+                android:layout_marginRight="10dp"
+                android:layout_marginTop="30dp"
+                android:text="* Resíduoes radioativos."
+                android:textColor="@color/labels"
+                android:textSize="16dp"/>
+
+            <ImageView
+                android:id="@+id/imageView8"
+                android:layout_marginTop="30dp"
+                android:layout_width="match_parent"
+                android:layout_height="180dp"
+                app:srcCompat="@drawable/consequencias" />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="10dp"
+                android:layout_marginRight="10dp"
+                android:layout_marginTop="30dp"
+                android:text="Consequências para o meio ambiente:"
+                android:textColor="@color/labels"
+                android:textSize="16dp"/>
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="10dp"
+                android:layout_marginRight="10dp"
+                android:layout_marginTop="30dp"
+                android:text="* Praias tornaram-se impróprias para o banho;"
+                android:textColor="@color/labels"
+                android:textSize="16dp"/>
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="10dp"
+                android:layout_marginRight="10dp"
+                android:layout_marginTop="30dp"
+                android:text="* Prejuízos para os ecossistemas marinhos, principalmente desequilíbrio ecológico;"
+                android:textColor="@color/labels"
+                android:textSize="16dp"/>
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="10dp"
+                android:layout_marginRight="10dp"
+                android:layout_marginTop="30dp"
+                android:text="* Contaminação de peixes e outros animais marinhos;"
+                android:textColor="@color/labels"
+                android:textSize="16dp"/>
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="10dp"
+                android:layout_marginRight="10dp"
+                android:layout_marginTop="30dp"
+                android:text="* Mortes de pássaros que se alimentam de peixes contaminados;"
+                android:textColor="@color/labels"
+                android:textSize="16dp"/>
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="10dp"
+                android:layout_marginRight="10dp"
+                android:layout_marginTop="30dp"
+                android:text="* Em casos de vazamento de petróleo, é comum ocorrer a morte de pássaros, focas, tartarugas e leões marinhos que entram em contato com petróleo;"
+                android:textColor="@color/labels"
+                android:textSize="16dp"/>
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="10dp"
+                android:layout_marginRight="10dp"
+                android:layout_marginTop="30dp"
+                android:text="* Degradação de regiões de mangues."
+                android:textColor="@color/labels"
+                android:textSize="16dp"/>
+
+        </LinearLayout>
+
+    </ScrollView>
+
+</androidx.constraintlayout.widget.ConstraintLayout>

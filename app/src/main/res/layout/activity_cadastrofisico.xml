@@ -1,0 +1,247 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/labels">
+
+    <LinearLayout
+        android:id="@+id/linearLayout"
+        android:layout_width="match_parent"
+        android:layout_height="50dp"
+        android:orientation="horizontal"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent">
+
+        <ImageView
+            android:id="@+id/imgLogo"
+            android:layout_width="500dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            app:srcCompat="@drawable/logo" />
+
+        <ImageView
+            android:id="@+id/imageView2"
+            android:layout_width="200dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            app:srcCompat="@drawable/usuario" />
+
+    </LinearLayout>
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical">
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:textColor="@color/textos"
+                android:textSize="16dp"
+                android:text="Para efetivar sua participação no projeto Verde Mar, precisamos de algumas informações pessoais. "
+                android:layout_marginLeft="20dp"
+                android:layout_marginRight="20dp"
+                android:layout_marginTop="80dp"
+                android:textAlignment="center"/>
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:textColor="@color/textos"
+                android:textSize="16dp"
+                android:text="Campos com * são obrigatórios. "
+                android:layout_marginLeft="90dp"
+                android:layout_marginRight="20dp"
+                android:layout_marginTop="10dp"
+                android:textAlignment="center"/>
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:textColor="@color/textos"
+                android:textSize="16dp"
+                android:text="Nome: *"
+                android:layout_marginLeft="10dp"
+                android:layout_marginTop="20dp" />
+
+            <EditText
+                android:id="@+id/Nome"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="20dp"
+                android:textColor="@color/textos"
+                android:inputType="text"/>
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:textColor="@color/textos"
+                android:textSize="16dp"
+                android:text="Email: *"
+                android:layout_marginLeft="10dp"
+                android:layout_marginTop="10dp"/>
+            <EditText
+                android:id="@+id/Email"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="20dp"
+                android:hint="xxxxx@gmail.com"
+                android:textColorHint="@color/textos"
+                android:textColor="@color/textos"
+                android:inputType="text"/>
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:textColor="@color/textos"
+                android:textSize="16dp"
+                android:text="Data de Nascimento: *"
+                android:layout_marginLeft="10dp"
+                android:layout_marginTop="10dp"/>
+            <EditText
+                android:id="@+id/DataNascimento"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="20dp"
+                android:hint="xx/xx/xxxx"
+                android:textColor="@color/textos"
+                android:textColorHint="@color/textos"
+                android:inputType="text"/>
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:textColor="@color/textos"
+                android:textSize="16dp"
+                android:text="Sexo: "
+                android:layout_marginLeft="10dp"
+                android:layout_marginTop="10dp"/>
+
+            <RadioButton
+                android:id="@+id/rbFeminino"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="Feminino"
+                android:layout_marginTop="20dp"
+                android:textColor="@color/textos"/>
+            <RadioButton
+                android:id="@+id/rbMaculino"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="Masculino"
+                android:layout_marginTop="20dp"
+                android:textColor="@color/textos"/>
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:textColor="@color/textos"
+                android:textSize="16dp"
+                android:text="Escolaridade: "
+                android:layout_marginLeft="10dp"
+                android:layout_marginTop="20dp"/>
+            <EditText
+                android:id="@+id/Escolaridade"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="20dp"
+                android:textColor="@color/textos"
+                android:inputType="text"/>
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:textColor="@color/textos"
+                android:textSize="16dp"
+                android:text="Profissão: "
+                android:layout_marginLeft="10dp"
+                android:layout_marginTop="10dp"/>
+            <EditText
+                android:id="@+id/Profissao"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="20dp"
+                android:textColor="@color/textos"
+                android:inputType="text"/>
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:textColor="@color/textos"
+                android:textSize="16dp"
+                android:text="CPF: *"
+                android:layout_marginLeft="10dp"
+                android:layout_marginTop="10dp"/>
+            <EditText
+                android:id="@+id/Cpf"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="20dp"
+                android:hint="xxx.xxx.xxx-xx"
+                android:textColor="@color/textos"
+                android:inputType="text"
+                android:textColorHint="@color/textos"/>
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:textColor="@color/textos"
+                android:textSize="16dp"
+                android:text="RG: *"
+                android:layout_marginLeft="10dp"
+                android:layout_marginTop="10dp"/>
+            <EditText
+                android:id="@+id/Rg"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="20dp"
+                android:hint="xx.xxx.xxx-x"
+                android:textColor="@color/textos"
+                android:inputType="text"
+                android:textColorHint="@color/textos"/>
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:textColor="@color/textos"
+                android:textSize="16dp"
+                android:text="Senha: *"
+                android:layout_marginLeft="10dp"
+                android:layout_marginTop="10dp"/>
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:textColor="@color/textos"
+                android:textSize="10dp"
+                android:text="No mínimo 6 caracteres"
+                android:layout_marginLeft="10dp"
+                android:layout_marginTop="10dp"/>
+            <EditText
+                android:id="@+id/Senha"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="20dp"
+                android:textColor="@color/textos"
+                android:inputType="text"/>
+
+            <Button
+                android:id="@+id/btnCadastrar"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="cadastrar"
+                android:background="@color/cor_fundo"
+                android:textColor="@color/labels"
+                android:textSize="24dp"
+                android:layout_marginLeft="10dp"
+                android:layout_marginRight="10dp"
+                android:layout_marginTop="20dp"
+                android:layout_marginBottom="10dp"/>
+
+        </LinearLayout>
+    </ScrollView>
+
+</androidx.constraintlayout.widget.ConstraintLayout>

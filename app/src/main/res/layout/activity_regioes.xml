@@ -1,0 +1,108 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/labels">
+
+    <LinearLayout
+        android:id="@+id/linearLayout"
+        android:layout_width="match_parent"
+        android:layout_height="50dp"
+        android:orientation="horizontal"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent">
+
+
+        <ImageView
+            android:id="@+id/imgLogo"
+            android:layout_width="500dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            app:srcCompat="@drawable/logo" />
+
+        <ImageView
+            android:id="@+id/imageView2"
+            android:layout_width="200dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            app:srcCompat="@drawable/usuario" />
+    </LinearLayout>
+
+    <TextView
+        android:id="@+id/txtEnunciado"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="30dp"
+        android:layout_marginTop="28dp"
+        android:layout_marginEnd="30dp"
+        android:text="Aqui você pode encontrar as informações do projeto Verde Mar atuando em todo o litorial brasileiro."
+        android:textAlignment="center"
+        android:textColor="@color/textos"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/linearLayout" />
+
+    <TextView
+        android:id="@+id/textView2"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="4dp"
+        android:text="Encontre as informações separadas por regiões."
+        android:textAlignment="center"
+        android:textColor="@color/textos"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.504"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/txtEnunciado" />
+
+    <ImageView
+        android:id="@+id/imgNordeste"
+        android:layout_width="180dp"
+        android:layout_height="180dp"
+        android:layout_marginStart="11dp"
+        android:layout_marginTop="48dp"
+        android:layout_marginEnd="20dp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.0"
+        app:layout_constraintStart_toEndOf="@+id/imgNorte"
+        app:layout_constraintTop_toBottomOf="@+id/textView2"
+        app:srcCompat="@drawable/nordeste" />
+
+    <ImageView
+        android:id="@+id/imgNorte"
+        android:layout_width="180dp"
+        android:layout_height="180dp"
+        android:layout_marginStart="10dp"
+        android:layout_marginTop="48dp"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/textView2"
+        app:srcCompat="@drawable/norte" />
+
+    <ImageView
+        android:id="@+id/imgSudeste"
+        android:layout_width="180dp"
+        android:layout_height="180dp"
+        android:layout_marginStart="10dp"
+        android:layout_marginTop="20dp"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/imgNorte"
+        app:srcCompat="@drawable/sudeste" />
+
+    <ImageView
+        android:id="@+id/imgSul"
+        android:layout_width="180dp"
+        android:layout_height="180dp"
+        android:layout_marginStart="11dp"
+        android:layout_marginTop="20dp"
+        android:layout_marginEnd="20dp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.0"
+        app:layout_constraintStart_toEndOf="@+id/imgSudeste"
+        app:layout_constraintTop_toBottomOf="@+id/imgNordeste"
+        app:srcCompat="@drawable/sul" />
+
+
+</androidx.constraintlayout.widget.ConstraintLayout>
